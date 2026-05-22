@@ -3,118 +3,141 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eintracht Frankfurt - Scouting Report</title>
+    <title>ScoutingHub // Eintracht Frankfurt Report</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght=400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Inter', sans-serif; }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .heading-display { font-family: 'Syne', sans-serif; }
     </style>
 </head>
-<body class="bg-slate-900 text-slate-100 min-h-screen flex flex-col">
+<body class="bg-[#070a12] text-slate-200 min-h-screen flex flex-col selection:bg-amber-500 selection:text-black">
 
-    <!-- Navigation Header -->
-    <header class="border-b border-slate-800 bg-slate-950/50 backdrop-blur px-6 py-4 sticky top-0 z-50">
+    <!-- Premium Glow Header -->
+    <header class="border-b border-slate-800/80 bg-[#0b0f19]/70 backdrop-blur-md px-8 py-5 sticky top-0 z-50">
         <div class="max-w-7xl mx-auto flex justify-between items-center">
-            <a href="index.html" class="text-xl font-bold tracking-tight bg-gradient-to-r from-indigo-400 to-cyan-400 bg-clip-text text-transparent hover:opacity-80 transition-opacity">
-                ScoutingHub<span class="text-slate-400 font-normal">.pro</span>
+            <a href="index.html" class="heading-display text-xl font-extrabold tracking-tight bg-gradient-to-r from-amber-400 to-red-500 bg-clip-text text-transparent hover:opacity-90 transition-opacity">
+                SCOUTINGHUB<span class="text-slate-500 font-light text-sm">//PRO</span>
             </a>
-            <a href="index.html" class="text-xs font-medium bg-slate-800 text-slate-300 px-4 py-1.5 rounded-lg border border-slate-700 hover:bg-slate-700 transition-colors">
-                ← Back to Portal
+            <a href="index.html" class="text-xs font-semibold tracking-wide uppercase bg-slate-900 text-slate-300 px-4 py-2 rounded-lg border border-slate-800 hover:border-slate-700 hover:bg-slate-800 transition-all">
+                ← Back to Dashboard
             </a>
         </div>
     </header>
 
-    <!-- Report Content -->
-    <main class="flex-grow max-w-5xl w-full mx-auto px-6 py-12">
+    <!-- Main Report Body -->
+    <main class="flex-grow max-w-6xl w-full mx-auto px-8 py-12">
         
-        <!-- Header Banner -->
-        <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-slate-800 pb-8 mb-8">
-            <div>
-                <div class="flex items-center gap-3 mb-2">
-                    <span class="text-xs font-bold uppercase tracking-widest text-amber-400 bg-amber-950/40 border border-amber-900/60 px-2.5 py-0.5 rounded">Bundesliga Analytics</span>
-                </div>
-                <h2 class="text-3xl font-bold tracking-tight">Eintracht Frankfurt</h2>
-                <p class="text-slate-400 text-sm mt-1">Tactical baseline, core squad deficiencies, and summer recruitment directives.</p>
-            </div>
-            <div class="bg-slate-950 border border-slate-800 rounded-xl px-6 py-4 flex gap-8">
+        <!-- Identity Hero Section -->
+        <div class="relative border border-slate-800 bg-[#0b0f19] rounded-2xl p-8 mb-8 overflow-hidden shadow-2xl">
+            <div class="absolute top-0 right-0 w-96 h-96 bg-amber-500/5 rounded-full blur-3xl -mr-20 -mt-20 pointer-events-none"></div>
+            
+            <div class="flex flex-col md:flex-row md:items-center justify-between gap-6 relative z-10">
                 <div>
-                    <span class="block text-xs text-slate-500 font-semibold uppercase">Style Focus</span>
-                    <span class="text-lg font-bold text-amber-400">Direct Verticality</span>
+                    <div class="flex items-center gap-2 mb-3">
+                        <span class="w-2 h-2 rounded-full bg-amber-500 animate-pulse"></span>
+                        <span class="text-xs font-bold tracking-widest uppercase text-amber-400 font-mono">Bundesliga Tier-1 Analysis</span>
+                    </div>
+                    <h2 class="heading-display text-4xl font-extrabold text-white tracking-tight">Eintracht Frankfurt</h2>
+                    <p class="text-slate-400 text-sm mt-2 max-w-xl">Comprehensive tactical mapping, transitional vulnerabilities, and validated 2026 summer recruitment targets.</p>
                 </div>
-                <div>
-                    <span class="block text-xs text-slate-500 font-semibold uppercase">Squad Value</span>
-                    <span class="text-lg font-bold text-slate-200">€340m</span>
+                <div class="flex gap-4 border-l border-slate-800 pl-6 cold-stats">
+                    <div class="bg-slate-900/50 border border-slate-800/60 rounded-xl px-5 py-3 min-w-[120px]">
+                        <span class="block text-[10px] text-slate-500 font-bold uppercase tracking-wider">Core Style</span>
+                        <span class="text-base font-bold text-white mt-0.5 block">Verticality</span>
+                    </div>
+                    <div class="bg-slate-900/50 border border-slate-800/60 rounded-xl px-5 py-3 min-w-[120px]">
+                        <span class="block text-[10px] text-slate-500 font-bold uppercase tracking-wider">Squad Value</span>
+                        <span class="text-base font-bold text-amber-400 mt-0.5 block">€340.5m</span>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <!-- Tactical Profile -->
-        <section class="mb-10">
-            <h3 class="text-xl font-bold mb-4 flex items-center gap-2">
-                <span class="w-1.5 h-5 bg-amber-500 rounded-full"></span> Tactical Architecture
-            </h3>
-            <div class="bg-slate-950 border border-slate-800 rounded-xl p-6">
-                <p class="text-slate-300 leading-relaxed text-sm">
-                    Frankfurt operates as one of Europe's premier transition-heavy setups, deploying structural patterns aimed at generating explosive counter-attacks. They weaponize space out wide to trigger instant vertical movements through structural passing sequences, prioritizing progressive distance over sustained possession metrics.
-                </p>
-            </div>
-        </section>
-
-        <!-- Critical Vulnerabilities -->
-        <section class="mb-10">
-            <h3 class="text-xl font-bold mb-4 flex items-center gap-2">
-                <span class="w-1.5 h-5 bg-red-500 rounded-full"></span> Squad Vulnerabilities
-            </h3>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div class="bg-slate-950 border border-slate-800 rounded-xl p-5">
-                    <span class="text-xs font-bold text-red-400 uppercase tracking-wider block mb-1">Defensive Transition Lockouts</span>
-                    <p class="text-slate-400 text-sm leading-relaxed">Aggressive wing-back structures frequently leave isolated central defenders vulnerable to isolated 1v1 situations when opposing counters bypass their high-press layer.</p>
-                </div>
-                <div class="bg-slate-950 border border-slate-800 rounded-xl p-5">
-                    <span class="text-xs font-bold text-red-400 uppercase tracking-wider block mb-1">Deep Block Breakdown Creep</span>
-                    <p class="text-slate-400 text-sm leading-relaxed">When forced out of their dynamic transition phases and made to unlock low-block defenses, central zones display a clear drop-off in creative volume and intricate passing efficiency.</p>
+        <!-- Two-Column Tactical Grid -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-8">
+            
+            <!-- Left 2 Columns: Tactical Blueprint -->
+            <div class="lg:col-span-2 space-y-6">
+                <div class="border border-slate-800 bg-[#0b0f19] rounded-2xl p-6">
+                    <h3 class="heading-display text-lg font-bold text-white mb-4 flex items-center gap-2">
+                        <span class="w-1 h-4 bg-amber-500 rounded-sm"></span> Tactical Blueprint
+                    </h3>
+                    <p class="text-slate-300 text-sm leading-relaxed mb-4">
+                        Frankfurt remains one of Europe's most aggressive vertical transition models. They intentionally surrender sterile possession metrics in favor of baiting opponents high up the pitch, generating massive separation space to exploit immediately upon turning over the ball.
+                    </p>
+                    <div class="bg-[#070a12] border border-slate-800/50 rounded-xl p-4 font-mono text-xs text-slate-400 space-y-2">
+                        <div class="flex justify-between border-b border-slate-900 pb-2"><span class="text-slate-500">Defensive Line Block</span><span class="text-slate-200">Medium-High</span></div>
+                        <div class="flex justify-between border-b border-slate-900 pb-2"><span class="text-slate-500">Direct Attack Velocity</span><span class="text-slate-200">2.41 m/s (Top 5% Europe)</span></div>
+                        <div class="flex justify-between"><span class="text-slate-500">Build-up Focus</span><span class="text-slate-200">Flank Overloads / Inside Channels</span></div>
+                    </div>
                 </div>
             </div>
-        </section>
 
-        <!-- Transfer Targets Table -->
-        <section class="mb-12">
-            <h3 class="text-xl font-bold mb-4 flex items-center gap-2">
-                <span class="w-1.5 h-5 bg-indigo-500 rounded-full"></span> Verified Summer Targets (2026)
-            </h3>
-            <div class="bg-slate-950 border border-slate-800 rounded-xl overflow-hidden shadow-2xl">
+            <!-- Right 1 Column: Squad Defects -->
+            <div class="space-y-4">
+                <div class="border border-slate-800 bg-[#0b0f19] rounded-2xl p-6 h-full flex flex-col justify-between">
+                    <div>
+                        <h3 class="heading-display text-lg font-bold text-white mb-4 flex items-center gap-2">
+                            <span class="w-1 h-4 bg-red-500 rounded-sm"></span> Squad Defects
+                        </h3>
+                        <div class="space-y-4 text-xs">
+                            <div>
+                                <span class="font-semibold text-red-400 block mb-1">Rest-Defense Exposure</span>
+                                <p class="text-slate-400 leading-relaxed">Aggressive wing-back configurations create major structural leaks out wide when initial counter-pressing lines get bypassed cleanly.</p>
+                            </div>
+                            <div class="border-t border-slate-800/80 pt-3">
+                                <span class="font-semibold text-red-400 block mb-1">Low-Block Creative Ceiling</span>
+                                <p class="text-slate-400 leading-relaxed">When denied transition space and faced with organized deep defenses, the central pivot lacks creative variance to pick through locking lines.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Verified Summer Targets Table -->
+        <div class="border border-slate-800 bg-[#0b0f19] rounded-2xl overflow-hidden shadow-2xl">
+            <div class="px-6 py-5 border-b border-slate-800 bg-slate-900/30 flex justify-between items-center">
+                <h3 class="heading-display text-lg font-bold text-white flex items-center gap-2">
+                    <span class="w-1 h-4 bg-gradient-to-b from-amber-400 to-red-500 rounded-sm"></span> Primary Scouting Shortlist
+                </h3>
+                <span class="text-[10px] font-mono bg-slate-800 text-slate-400 px-2.5 py-1 rounded border border-slate-700 uppercase">Live Database</span>
+            </div>
+            <div class="overflow-x-auto">
                 <table class="w-full text-left border-collapse">
                     <thead>
-                        <tr class="bg-slate-900/60 border-b border-slate-800 text-xs font-bold tracking-wider text-slate-400 uppercase">
-                            <th class="px-6 py-4">Target Player</th>
+                        <tr class="bg-[#070a12]/80 border-b border-slate-800 font-mono text-[11px] tracking-wider text-slate-400 uppercase">
+                            <th class="px-6 py-4">Player Target</th>
                             <th class="px-6 py-4">Current Club</th>
-                            <th class="px-6 py-4">Targeted Role</th>
-                            <th class="px-6 py-4 text-right">Est. Cost</th>
+                            <th class="px-6 py-4">Identified Profile / Role</th>
+                            <th class="px-6 py-4 text-right">Est. Fee</th>
                         </tr>
                     </thead>
-                    <tbody class="divide-y divide-slate-800/60 text-sm">
-                        <tr class="hover:bg-slate-900/30 transition-colors">
-                            <td class="px-6 py-4 font-bold text-slate-200">Eric Martel</td>
+                    <tbody class="divide-y divide-slate-800/50 text-xs">
+                        <tr class="hover:bg-slate-900/20 transition-colors group">
+                            <td class="px-6 py-4 font-bold text-white group-hover:text-amber-400 transition-colors">Eric Martel</td>
                             <td class="px-6 py-4 text-slate-400">1. FC Köln</td>
-                            <td class="px-6 py-4 text-slate-300">Defensive Rest-Defense Anchor</td>
-                            <td class="px-6 py-4 text-right font-semibold text-amber-400">€18m</td>
+                            <td class="px-6 py-4 text-slate-300">Intense, high-volume ball-winner to anchor the rest-defense layer.</td>
+                            <td class="px-6 py-4 text-right font-semibold font-mono text-white">€18m</td>
                         </tr>
-                        <tr class="hover:bg-slate-900/30 transition-colors">
-                            <td class="px-6 py-4 font-bold text-slate-200">Zeno Debast</td>
+                        <tr class="hover:bg-slate-900/20 transition-colors group">
+                            <td class="px-6 py-4 font-bold text-white group-hover:text-amber-400 transition-colors">Zeno Debast</td>
                             <td class="px-6 py-4 text-slate-400">Sporting CP</td>
-                            <td class="px-6 py-4 text-slate-300">Ball-Carrying Right CB</td>
-                            <td class="px-6 py-4 text-right font-semibold text-amber-400">€28m</td>
+                            <td class="px-6 py-4 text-slate-300">Elite ball-carrying right center-back to construct play from deep lines.</td>
+                            <td class="px-6 py-4 text-right font-semibold font-mono text-white">€28m</td>
                         </tr>
                     </tbody>
                 </table>
             </div>
-        </section>
+        </div>
 
     </main>
 
-    <!-- Footer -->
-    <footer class="border-t border-slate-800 bg-slate-950/30 px-6 py-6 text-center text-xs text-slate-500 mt-auto">
-        &copy; 2026 ScoutingHub. All data verified post-season.
+    <!-- Unified Footer -->
+    <footer class="border-t border-slate-800 bg-[#0b0f19]/40 px-8 py-6 text-center text-xs text-slate-500 font-mono">
+        &copy; 2026 ScoutingHub Portal. High-fidelity automated sports intelligence.
     </footer>
 
 </body>
