@@ -3,162 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recruitment Hub | Systemic Deficit Mapping</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
-    <style>
-        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #fafafa; color: #0f172a; }
-    </style>
+    <title>Elite Recruitment Analytics Dashboard</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body class="bg-slate-50/50 antialiased">
+<body class="bg-slate-50 text-slate-900 font-sans antialiased">
 
-    <!-- Primary Control Header -->
-    <header class="bg-slate-950 text-white py-12 px-6 border-b border-slate-800 relative overflow-hidden">
-        <div class="absolute inset-0 opacity-10">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/e/ec/San_Siro_Stadium_Milano.jpg" alt="Stadium background" class="w-full h-full object-cover" />
-        </div>
-        <div class="max-w-6xl mx-auto relative z-10">
-            <div class="flex items-center gap-3 mb-3">
-                <span class="h-2 w-2 rounded-full bg-red-500 animate-pulse"></span>
-                <span class="text-xs font-mono tracking-widest text-red-400 uppercase font-bold">Systemic Audit Mode Active</span>
+    <!-- Navigation Header -->
+    <nav class="bg-slate-900 text-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center space-x-3">
+                    <span class="text-xl font-black tracking-wider text-emerald-400">ANALYTICS FC</span>
+                </div>
+                <div class="flex space-x-4 font-medium text-sm">
+                    <a href="index.html" class="text-emerald-400 border-b-2 border-emerald-400 px-3 py-2">Dashboard</a>
+                    <a href="manchester-united.html" class="hover:text-emerald-400 transition-colors px-3 py-2">Manchester United</a>
+                    <a href="brighton.html" class="hover:text-emerald-400 transition-colors px-3 py-2">Brighton & Hove Albion</a>
+                </div>
             </div>
-            <h1 class="text-3xl md:text-5xl font-black tracking-tight leading-none mb-4">
-                The Systemic Deficit Vault
-            </h1>
-            <p class="text-slate-400 text-sm md:text-base max-w-2xl leading-relaxed">
-                Isolating macro tactical failure points across top-tier European clubs and identifying data-vetted recruitment remedies.
-            </p>
+        </div>
+    </nav>
+
+    <!-- Hero Header -->
+    <header class="bg-gradient-to-r from-slate-900 via-slate-800 to-indigo-950 text-white py-12 px-4 shadow-inner">
+        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+            <h1 class="text-4xl font-extrabold tracking-tight sm:text-5xl">Recruitment Intelligence Hub</h1>
+            <p class="mt-3 text-lg text-slate-300 max-w-2xl">Data-driven squad profiling and automated target identification for the 2026/27 summer transfer window.</p>
         </div>
     </header>
 
-    <!-- Operational Hub -->
-    <main class="max-w-6xl mx-auto px-6 py-12">
-        <section>
-            <div class="flex justify-between items-center mb-8 border-b border-slate-200 pb-4">
-                <h2 class="text-xs font-bold tracking-widest text-slate-400 uppercase">Clubs Under Active Structural Audit</h2>
-                <span class="text-xs font-mono text-slate-500 bg-slate-100 px-2 py-0.5 rounded font-semibold">4 Audits Live</span>
+    <!-- Main Dashboard Content Grid -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+        <h2 class="text-2xl font-bold text-slate-800 mb-6">Active Club Analyses & Profiles</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            
+            <!-- Card 1: Manchester United -->
+            <div class="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden hover:shadow-md transition-shadow flex flex-col justify-between">
+                <div>
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1522778119026-d647f0596c20?auto=format&fit=crop&w=800&q=80" alt="Old Trafford Stadium" class="w-full h-full object-cover">
+                        <span class="absolute top-4 left-4 bg-red-600 text-white text-xs font-bold uppercase px-2.5 py-1 rounded-md shadow">Premier League</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-slate-900 mb-2">Manchester United</h3>
+                        <p class="text-slate-600 text-sm line-clamp-3 mb-4">An analytical review of structural flaws within United's transition defense and deep build-up mechanics, focusing on replacing technical deficiencies in the double-pivot engine room.</p>
+                        
+                        <!-- Core Metrics Badges -->
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-slate-100 text-slate-700 text-xs font-semibold px-2.5 py-1 rounded border border-slate-200">PPDA: 9.4 (High)</span>
+                            <span class="bg-slate-100 text-slate-700 text-xs font-semibold px-2.5 py-1 rounded border border-slate-200">Field Tilt: 58.2%</span>
+                        </div>
+
+                        <!-- Defined Target Block -->
+                        <div class="bg-slate-50 border-l-4 border-red-500 p-3 rounded-r-lg mb-2">
+                            <span class="block text-xs uppercase font-bold tracking-wider text-slate-500">Primary Recruitment Target</span>
+                            <span class="text-sm font-bold text-slate-800">Martin Zubimendi (Real Sociedad)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="px-6 pb-6 pt-2">
+                    <a href="manchester-united.html" class="block text-center bg-slate-900 hover:bg-slate-800 text-white font-semibold text-sm py-2.5 px-4 rounded-xl shadow-sm transition-colors">
+                        Read Full Analysis Report
+                    </a>
+                </div>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                
-                <!-- CLUB 1: MANCHESTER UNITED -->
-                <div class="bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition duration-300 flex flex-col justify-between">
-                    <div>
-                        <div class="h-48 w-full overflow-hidden relative bg-slate-900">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/4/43/Old_Trafford_inside_2006.jpg" 
-                                 alt="Old Trafford" class="w-full h-full object-cover grayscale opacity-90 hover:grayscale-0 transition duration-500" />
-                            <div class="absolute top-4 left-4 bg-red-950/90 text-red-400 font-mono text-[10px] font-bold tracking-wider px-2 py-0.5 rounded uppercase border border-red-900">
-                                Deficit Isolated
-                            </div>
-                        </div>
-                        <div class="p-6">
-                            <span class="text-[10px] font-extrabold text-slate-400 uppercase tracking-widest block mb-1">Premier League // Core Audit</span>
-                            <h3 class="text-xl font-bold text-slate-900 tracking-tight mb-2">Manchester United</h3>
-                            <p class="text-slate-600 text-xs leading-relaxed mb-4">
-                                Severe rest-defense decompression in the middle third. Attack-heavy optimization leaves center-backs completely exposed to open-field transitions.
-                            </p>
-                            <div class="flex gap-4 border-t border-slate-100 pt-3 text-[11px] font-semibold text-slate-500 font-mono">
-                                <div>PRIMARY FLAW: <span class="text-red-600 font-bold">Rest-Defense Collapse</span></div>
-                                <div>TARGET SOLUTION: <span class="text-slate-900 font-bold">Eric Martel</span></div>
-                            </div>
-                        </div>
+            <!-- Card 2: Brighton & Hove Albion -->
+            <div class="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden hover:shadow-md transition-shadow flex flex-col justify-between">
+                <div>
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1508098682722-e99c43a406b2?auto=format&fit=crop&w=800&q=80" alt="Amex Stadium" class="w-full h-full object-cover">
+                        <span class="absolute top-4 left-4 bg-blue-600 text-white text-xs font-bold uppercase px-2.5 py-1 rounded-md shadow">Premier League</span>
                     </div>
-                    <div class="p-6 pt-0">
-                        <a href="manchester-united.html" class="w-full block text-center bg-slate-900 hover:bg-slate-800 text-white text-xs font-bold py-3 rounded-xl transition shadow-sm">
-                            View Manchester United Audit &rarr;
-                        </a>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-slate-900 mb-2">Brighton & Hove Albion</h3>
+                        <p class="text-slate-600 text-sm line-clamp-3 mb-4">Assessing potential workflow adjustments under intense midfield turnover speculation, maintaining pressing volume, and protecting transition pathways if elite outgoings occur.</p>
+                        
+                        <!-- Core Metrics Badges -->
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-slate-100 text-slate-700 text-xs font-semibold px-2.5 py-1 rounded border border-slate-200">Ball Recovery Time: 11.2s</span>
+                            <span class="bg-slate-100 text-slate-700 text-xs font-semibold px-2.5 py-1 rounded border border-slate-200">Press Efficiency: 64.1%</span>
+                        </div>
+
+                        <!-- Defined Target Block -->
+                        <div class="bg-slate-50 border-l-4 border-blue-500 p-3 rounded-r-lg mb-2">
+                            <span class="block text-xs uppercase font-bold tracking-wider text-slate-500">Primary Recruitment Target</span>
+                            <span class="text-sm font-bold text-slate-800">Kaishu Sano (Mainz 05)</span>
+                        </div>
                     </div>
                 </div>
-
-                <!-- CLUB 2: EINTRACHT FRANKFURT -->
-                <div class="bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition duration-300 flex flex-col justify-between">
-                    <div>
-                        <div class="h-48 w-full overflow-hidden relative bg-slate-900">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/1/12/Frankfurt_stadium.jpg" 
-                                 alt="Deutsche Bank Park" class="w-full h-full object-cover grayscale opacity-90 hover:grayscale-0 transition duration-500" />
-                            <div class="absolute top-4 left-4 bg-slate-900/90 text-amber-400 font-mono text-[10px] font-bold tracking-wider px-2 py-0.5 rounded uppercase border border-slate-700">
-                                Deficit Isolated
-                            </div>
-                        </div>
-                        <div class="p-6">
-                            <span class="text-[10px] font-extrabold text-slate-400 uppercase tracking-widest block mb-1">Bundesliga // Core Audit</span>
-                            <h3 class="text-xl font-bold text-slate-900 tracking-tight mb-2">Eintracht Frankfurt</h3>
-                            <p class="text-slate-600 text-xs leading-relaxed mb-4">
-                                Midfield engine room lacks a dedicated defensive anchor, forcing vertical box-to-box profiles deep and leaving horizontal lanes vulnerable to transition exploitation.
-                            </p>
-                            <div class="flex gap-4 border-t border-slate-100 pt-3 text-[11px] font-semibold text-slate-500 font-mono">
-                                <div>PRIMARY FLAW: <span class="text-amber-600 font-bold">Anchor Deficit</span></div>
-                                <div>TARGET SOLUTION: <span class="text-slate-900 font-bold">Sergi Altimira</span></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="p-6 pt-0">
-                        <a href="eintracht-frankfurt.html" class="w-full block text-center bg-slate-900 hover:bg-slate-800 text-white text-xs font-bold py-3 rounded-xl transition shadow-sm">
-                            View Eintracht Frankfurt Audit &rarr;
-                        </a>
-                    </div>
+                <div class="px-6 pb-6 pt-2">
+                    <a href="brighton.html" class="block text-center bg-slate-900 hover:bg-slate-800 text-white font-semibold text-sm py-2.5 px-4 rounded-xl shadow-sm transition-colors">
+                        Read Full Analysis Report
+                    </a>
                 </div>
-
-                <!-- CLUB 3: SPORTING CP -->
-                <div class="bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition duration-300 flex flex-col justify-between">
-                    <div>
-                        <div class="h-48 w-full overflow-hidden relative bg-slate-900">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/e/e3/Est%C3%A1dio_Alvalade_XXI_-_Interior.jpg" 
-                                 alt="Estadio Jose Alvalade" class="w-full h-full object-cover grayscale opacity-90 hover:grayscale-0 transition duration-500" />
-                            <div class="absolute top-4 left-4 bg-slate-900/90 text-emerald-400 font-mono text-[10px] font-bold tracking-wider px-2 py-0.5 rounded uppercase border border-slate-700">
-                                Deficit Isolated
-                            </div>
-                        </div>
-                        <div class="p-6">
-                            <span class="text-[10px] font-extrabold text-slate-400 uppercase tracking-widest block mb-1">Liga Portugal // Core Audit</span>
-                            <h3 class="text-xl font-bold text-slate-900 tracking-tight mb-2">Sporting CP</h3>
-                            <p class="text-slate-600 text-xs leading-relaxed mb-4">
-                                Half-space exposure during vertical wing-back rotations. Demands an elite, wide recovery center-back proficient in sweeping out vacated channels.
-                            </p>
-                            <div class="flex gap-4 border-t border-slate-100 pt-3 text-[11px] font-semibold text-slate-500 font-mono">
-                                <div>PRIMARY FLAW: <span class="text-emerald-600 font-bold">Channel Exposure</span></div>
-                                <div>TARGET SOLUTION: <span class="text-slate-900 font-bold">Zeno Debast</span></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="p-6 pt-0">
-                        <a href="sporting-cp.html" class="w-full block text-center bg-slate-900 hover:bg-slate-800 text-white text-xs font-bold py-3 rounded-xl transition shadow-sm">
-                            View Sporting CP Audit &rarr;
-                        </a>
-                    </div>
-                </div>
-
-                <!-- CLUB 4: BRIGHTON & HOVE ALBION -->
-                <div class="bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition duration-300 flex flex-col justify-between">
-                    <div>
-                        <div class="h-48 w-full overflow-hidden relative bg-slate-900">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Falmer_Stadium_August_2011.jpg" 
-                                 alt="Amex Stadium" class="w-full h-full object-cover grayscale opacity-90 hover:grayscale-0 transition duration-500" />
-                            <div class="absolute top-4 left-4 bg-slate-900/90 text-blue-400 font-mono text-[10px] font-bold tracking-wider px-2 py-0.5 rounded uppercase border border-slate-700">
-                                Deficit Isolated
-                            </div>
-                        </div>
-                        <div class="p-6">
-                            <span class="text-[10px] font-extrabold text-slate-400 uppercase tracking-widest block mb-1">Premier League // Core Audit</span>
-                            <h3 class="text-xl font-bold text-slate-900 tracking-tight mb-2">Brighton & Hove Albion</h3>
-                            <p class="text-slate-600 text-xs leading-relaxed mb-4">
-                                Susceptibility to high-turnover margins when baiting first-line opponent presses inside their defensive third. Demands elite deep ball security.
-                            </p>
-                            <div class="flex gap-4 border-t border-slate-100 pt-3 text-[11px] font-semibold text-slate-500 font-mono">
-                                <div>PRIMARY FLAW: <span class="text-blue-600 font-bold">Deep Turnover Risk</span></div>
-                                <div>TARGET SOLUTION: <span class="text-slate-900 font-bold">Mats Wieffer</span></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="p-6 pt-0">
-                        <a href="brighton.html" class="w-full block text-center bg-slate-900 hover:bg-slate-800 text-white text-xs font-bold py-3 rounded-xl transition shadow-sm">
-                            View Brighton & Hove Albion Audit &rarr;
-                        </a>
-                    </div>
-                </div>
-
             </div>
-        </section>
+
+        </div>
     </main>
+
+    <footer class="bg-slate-900 text-slate-400 text-center py-6 border-t border-slate-800 text-xs mt-16">
+        &copy; 2026 Analytics FC. Internal Data Intelligence Portal. All rights reserved.
+    </footer>
+
 </body>
 </html>
